@@ -3,42 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Bouncy Bat - Privacy Policy</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            background: #241b13;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
+            margin: 0;
+            padding: 35px 20px;
+            background:
+                radial-gradient(circle at 20% 15%, rgba(255,255,255,0.18), transparent 25%),
+                radial-gradient(circle at 80% 80%, rgba(80,45,20,0.15), transparent 30%),
+                #e7d2a8;
+            color: #2b1c12;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        .paper {
+            position: relative;
+            max-width: 1050px;
             margin: 0 auto;
-            padding: 40px 20px;
-            line-height: 1.6;
-            color: #222;
-            background: #fff;
+            padding: 55px 75px 45px;
+            background:
+                radial-gradient(circle at 10% 20%, rgba(120,75,35,0.07), transparent 18%),
+                radial-gradient(circle at 85% 65%, rgba(120,75,35,0.06), transparent 20%),
+                #f1dfb9;
+            box-shadow:
+                0 0 35px rgba(0,0,0,0.45),
+                inset 0 0 45px rgba(80,45,20,0.18);
+            border: 1px solid rgba(74,45,25,0.45);
+        }
+
+        /* Slightly irregular-looking paper edges */
+        .paper::before {
+            content: "";
+            position: absolute;
+            inset: 8px;
+            border: 1px solid rgba(80,45,20,0.16);
+            pointer-events: none;
         }
 
         h1 {
-            margin-bottom: 10px;
+            margin: 0;
+            text-align: center;
+            font-size: clamp(38px, 5vw, 64px);
+            font-style: italic;
+            font-weight: bold;
+            letter-spacing: -1px;
+            color: #24160d;
         }
 
-        h2 {
-            margin-top: 30px;
+        .ornament {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 24px auto 18px;
+            max-width: 600px;
+            color: #67472d;
+        }
+
+        .ornament::before,
+        .ornament::after {
+            content: "";
+            height: 1px;
+            flex: 1;
+            background: #806044;
+        }
+
+        .ornament span {
+            padding: 0 18px;
+            font-size: 22px;
         }
 
         .date {
-            color: #666;
+            text-align: center;
+            margin: 0 0 42px;
+            font-size: 18px;
+            font-style: italic;
+            color: #60452f;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin: 0 0 24px;
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 42px 0 14px;
+            font-size: 31px;
+            font-style: italic;
+            color: #291a10;
+        }
+
+        h2::after {
+            content: "";
+            height: 1px;
+            flex: 1;
+            background: #806044;
+            opacity: 0.65;
+        }
+
+        a {
+            color: #632d1f;
+            font-weight: bold;
+        }
+
+        .contact-email {
+            font-size: 20px;
+            margin-top: -8px;
+        }
+
+        .footer {
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .footer-line {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .footer-line::before,
+        .footer-line::after {
+            content: "";
+            height: 1px;
+            flex: 1;
+            background: #806044;
+        }
+
+        .logo {
+            display: block;
+            width: 125px;
+            height: auto;
+            margin: 0 auto 15px;
+            opacity: 0.9;
+        }
+
+        .jo-san {
+            margin: 0;
+            font-size: 26px;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .tagline {
+            margin: 5px 0 0;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            color: #59402b;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 12px;
+            }
+
+            .paper {
+                padding: 38px 25px 32px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            h2 {
+                font-size: 26px;
+                gap: 12px;
+            }
+
+            h2::after {
+                display: none;
+            }
+
+            p {
+                font-size: 17px;
+                line-height: 1.65;
+            }
+
+            .date {
+                font-size: 16px;
+            }
+
+            .logo {
+                width: 105px;
+            }
+
+            .tagline {
+                font-size: 9px;
+                letter-spacing: 2px;
+            }
         }
     </style>
 </head>
+
 <body>
+
+<div class="paper">
 
     <h1>Bouncy Bat - Privacy Policy</h1>
 
+    <div class="ornament">
+        <span>❦</span>
+    </div>
+
     <p class="date">Last updated: September 5, 2026</p>
+
 
     <p>
         Bouncy Bat ("the Game") is a casual arcade game developed by Jo-san.
         This Privacy Policy explains how information is handled when you use
         Bouncy Bat.
     </p>
+
 
     <h2>Information We Collect</h2>
 
@@ -48,6 +238,7 @@
         information such as your name, email address, phone number, or location.
     </p>
 
+
     <h2>Game Data</h2>
 
     <p>
@@ -55,6 +246,7 @@
         This information is not transmitted to the developer or to any third
         party.
     </p>
+
 
     <h2>Third-Party Services</h2>
 
@@ -64,12 +256,14 @@
         personal information.
     </p>
 
+
     <h2>Children's Privacy</h2>
 
     <p>
         Bouncy Bat does not knowingly collect personal information from
         children or adults.
     </p>
+
 
     <h2>Data Security</h2>
 
@@ -78,6 +272,7 @@
         there is no personal information stored on our servers.
     </p>
 
+
     <h2>Changes to This Privacy Policy</h2>
 
     <p>
@@ -85,13 +280,40 @@
         be published on this page with an updated revision date.
     </p>
 
+
     <h2>Contact</h2>
 
     <p>
         If you have any questions about this Privacy Policy or Bouncy Bat,
-        you can contact the developer through the contact information provided
-        on the game's Google Play Store listing.
+        please contact the developer at:
     </p>
+
+    <p class="contact-email">
+        <a href="mailto:josan.developer@gmail.com">
+            josan.developer@gmail.com
+        </a>
+    </p>
+
+
+    <div class="footer">
+
+        <div class="footer-line"></div>
+
+        <img
+            src="jo-san-logo.png"
+            alt="Jo-san"
+            class="logo"
+        >
+
+        <p class="jo-san">Jo - san</p>
+
+        <p class="tagline">
+            GAMES, WEBSITES AND CREATIVE PROJECTS
+        </p>
+
+    </div>
+
+</div>
 
 </body>
 </html>
